@@ -8,18 +8,18 @@ class Order extends Basket
 
     public function __construct($name)
     {
-        $this -> name = $name;
+        $this->name = $name;
     }
 
     public function getName()
     {
-        return $this -> name;
+        return $this->name;
     }
 
     public function getBasket()
     {
         echo 'Ваш заказ:' . '<br>';
-        echo $this -> name -> showBasket();
+        echo $this->name->showBasket();
     }
 }
 

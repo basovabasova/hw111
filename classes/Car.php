@@ -9,12 +9,12 @@ class Car extends SuperClassProduct implements CarInterface
     public function __construct($color, $name, $type, $price, $weight) 
     {
         parent:: __construct($name, $type, $price, $weight);
-        $this -> color = $color;
+        $this->color = $color;
     }
 
     public function isHighSpeed()
     {
-        if ($this -> name !== 'Ferrari') {
+        if ($this->name !== 'Ferrari') {
             return false;
         } else {
             return true;
@@ -23,6 +23,6 @@ class Car extends SuperClassProduct implements CarInterface
 
     public function getDescription()
     {
-        echo "{$this -> name} цвета {$this -> color}. ";
+        echo "{$this->name} цвета {$this->color}. ";
     }
 }

@@ -8,42 +8,42 @@ $skoda -> getFullDescription();
 echo '<hr>';
 
 $lg = new \classes\TV('LG 24LH451U', 'LED', 24, 12480, 15);
-$lg -> getFullDescription();
-$lg -> setYear(2017);
+$lg->getFullDescription();
+$lg->setYear(2017);
 $arrLg = (array)$lg;
 echo "{$arrLg['year']} год";
 echo '<hr>';
 
 $trueDuck = new \classes\Duck('true', 'Настоящая Утка', 2200, 2);
 $homeDuck = new \classes\Duck('home', 'Домашняя Утка', 4500, 3);
-$trueDuck -> getFullDescription();
-$homeDuck -> getFullDescription();
-$homeDuck -> getQuestion();
-if ($homeDuck -> isAlive()) echo 'Живая!' . '<br>';
+$trueDuck->getFullDescription();
+$homeDuck->getFullDescription();
+$homeDuck->getQuestion();
+if ($homeDuck->isAlive()) echo 'Живая!' . '<br>';
 echo '<hr>';
 
 $parker = new \classes\Pen('Parker Premier - Custom Tartan ST', 'black', 'a fountain pen', 45300, 0.04);
 $waterman = new \classes\Pen('Waterman Carene - Contemporary White ST', 'red', 'ballpen', 21400, 0.05);
-$parker -> getFullDescription();
-$parker -> getNewPen();
-$waterman -> getFullDescription();
-$waterman -> getNewPen();
+$parker->getFullDescription();
+$parker->getNewPen();
+$waterman->getFullDescription();
+$waterman->getNewPen();
 echo '<hr>';
 
 $basket = new \classes\Basket();
-$basket -> addProduct($skoda); 
-$basket -> addProduct($lg); 
-$basket -> addProduct($trueDuck); 
-$basket -> addProduct($homeDuck); 
-$basket -> addProduct($parker); 
-$basket -> addProduct($parker); 
-$basket -> addProduct($waterman);
-$basket -> deleteOneProduct($parker);
-//$basket -> showBasket();
+$basket->addProduct($skoda); 
+$basket->addProduct($lg); 
+$basket->addProduct($trueDuck); 
+$basket->addProduct($homeDuck); 
+$basket->addProduct($parker); 
+$basket->addProduct($parker); 
+$basket->addProduct($waterman);
+$basket->deleteOneProduct($parker);
+//$basket->showBasket();
 echo '<hr>';
 
 $order = new \classes\Order($basket);
-$order -> getBasket();
+$order->getBasket();
 echo '<hr>';
 ?>
 
